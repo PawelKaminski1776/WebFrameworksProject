@@ -1,42 +1,23 @@
 extends layout 
 
 block content 
-    article 
-        .container
-            .d-flex.justify-content-center.h-100
-                .card
-                    .card-header
-                        h3 Sign In
-                        .d-flex.justify-content-end.social_icon
-                        span
-                            i.fab.fa-facebook-square
-                        span
-                            i.fab.fa-google-plus-square
-                        span
-                            i.fab.fa-twitter-square
-                    .card-body
-                        form(method="get" action="/homepage")
-                            .input-group.form-group
-                                .input-group-prepend
-                                span.input-group-text
-                                    i.fas.fa-user
-                                input.form-control(type='text' placeholder='username')
-                            .input-group.form-group
-                                .input-group-prepend
-                                span.input-group-text
-                                    i.fas.fa-key
-                                input.form-control(type='password' placeholder='password')
-                            .row.align-items-center.remember
-                                input(type='checkbox')
-                                | Remember Me
-                            .form-group
-                                input.btn.float-right.login_btn(type='submit' value='Login')
-                    .card-footer
-                        .d-flex.justify-content-center.links
-                            | Don&apos;t have an account?
-                            a(href='/register') Sign Up
-                        .d-flex.justify-content-center
-                            a(href='#') Forgot your password?
+    article
+        .column
+            h3 Sign In
+             form(method="get", action="/login")
+             .row
+                fieldset.mediumcolumn
+                    p Register
+                        br
+                    label(for="username") Username:
+                        input(type="text", name="username").textbox
+                    label(for="password") Password:
+                        input(type="password", name="Password").textbox
+                    a(href='/register') Sign Up
+                    a(href='#') Forgot your password?
+             .row
+
+                  fieldset             input(type='submit' value='Login').button
                 
         br
         br

@@ -75,6 +75,12 @@ nav > h1 > a:link {
 	text-decoration: none;
   }
 
+nav > h1 > a:visited {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+}
+
 .bigbox 
 {  
 	background-color:white;
@@ -115,11 +121,11 @@ article {
 	margin-bottom: 5%;
 }
 
-.tightcolumn {
+.mediumcolumn {
 	display:flex;
 	flex-direction: column;
-	width:40%;
-	text-align: center;
+	margin-bottom: 5%;
+	width: 40%;
 }
 
 .smallcolumn {
@@ -165,10 +171,6 @@ footer > p {
     position:absolute;
     right:10px;}
 
-form > input {
-	width: 400px;
-}
-
 .box 
 {  
 	background-color:white;
@@ -192,55 +194,13 @@ form > input {
 	color: white;
 }
 
-   .container{
-	height: 100%;
-	align-content: center;
-	}
-	
-	.card{
-	height: 370px;
-	margin-top: auto;
-	margin-bottom: auto;
-	width: 400px;
-	background-color: rgba(0,0,0,0.5) !important;
-	}
-	
-	.social_icon span{
-	font-size: 60px;
-	margin-left: 10px;
-	color: #FFC312;
-	}
-	
-	.social_icon span:hover{
-	color: white;
-	cursor: pointer;
-	}
-	
-	.card-header h3{
-	color: white;
-	}
-	
-	.social_icon{
-	position: absolute;
-	right: 20px;
-	top: -45px;
-	}
-	
-	.input-group-prepend span{
-	width: 50px;
-	background-color: #FFC312;
-	color: black;
-	border:0 !important;
-	}
-	
-	input:focus{
-	outline: 0 0 0 0  !important;
-	box-shadow: 0 0 0 0 !important;
-	
-	}
-	
-	.remember{
-	color: white;
-	}
-	
+.textbox {
+	width: 50%;
+}
+
+.button {
+	width: 10%;
+}
+
+
 
