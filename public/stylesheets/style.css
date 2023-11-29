@@ -126,6 +126,7 @@ article {
 	flex-direction: column;
 	margin-bottom: 5%;
 	width: 40%;
+	text-align: center;
 }
 
 .smallcolumn {
@@ -200,6 +201,10 @@ footer > p {
 
 .button {
 	width: 10%;
+}
+
+label {
+	color: white;
 }
 
 
